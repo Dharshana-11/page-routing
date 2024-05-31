@@ -52,7 +52,7 @@ const Details = () => {
         </div>
         </div>
         </div>
-        <button onClick={()=>navigate("/table")}><CaretLeft size={16}/> Back</button>
+        <button onClick={()=>navigate("/students")}><CaretLeft size={16}/> Back</button>
     </div>
   )
 }

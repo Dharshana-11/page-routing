@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Details from './Details'
 import Main from './Main'
 import Login from './Login'
+import Layout from './Layout'
 
 const PageRouting = () => {
   return (
@@ -10,8 +11,8 @@ const PageRouting = () => {
         <Router>
             <Routes>
                 <Route path="/" element={<Login/>}/>
-                <Route path="/table" element={<Main/>}/>
-                <Route path="/student/:id" element={<Details/>}/>
+                <Route path="/students" element={<Layout><Main/></Layout>}/>
+                <Route path="/student/:id" element={<Layout><Details/></Layout>}/>
             </Routes>
         </Router>
 

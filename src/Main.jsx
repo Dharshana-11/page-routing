@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate} from 'react-router-dom' 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ChevronDoubleLeft } from 'react-bootstrap-icons';
-import { faBold } from '@fortawesome/free-solid-svg-icons';
+// import { faBold } from '@fortawesome/free-solid-svg-icons';
 
 const Main = () => {
     const navigate=useNavigate()
@@ -22,7 +22,7 @@ const Main = () => {
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td ><text onClick={()=>navigate("/student/1")} style={{cursor:"pointer"}}>Angelin</text></td>
+                    <td ><text onClick={()=>navigate("/student/1")} style={{cursor:"pointer" }}>Angelin</text></td>
                 </tr>
                 <tr>
                     <td>2</td>

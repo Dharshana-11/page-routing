@@ -47,70 +47,93 @@ img{
   opacity:0.9;
   padding-top:20px;
 }
-
-@media screen  and (max-width:349px)
-{
-  body{
-    width:100%
-  }
-  fieldset{
-    height:300px;
-    width:150px;
-  }
-
+text:hover{
+  color:grey
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%; 
+}
+.entire {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width:100%;
 }
 
-@media screen and (min-width: 350px)  and (max-width:400px)
-{
-  body{
-    width:100%;
-  }
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 35px 30px;
 }
 
-@media screen and (min-width: 401px) and (max-width:900px)
-{
-  body{
-      width:100%;
-    }
+.menu_class {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  background-color: #f1f1f1;
+  transition: 0.5s;
+  padding-top: 70px;
+  margin-top: 40px;
+  padding-left: 20px;
+  text-align: left;
 }
 
-@media screen and (min-width: 901px) and (max-width:1600px)
-  {
-    body{
-        width:100%;
-      }
-    }
+.menu_class .close {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 36px;
+}
 
-@media screen and (min-width: 1600px) and (max-width:4000px)
-  {
-    body{
-        width:100%;
-      }
-    fieldset{
-        height:800px;
-        width:550px;
-      }
-    input {
-        height: 50px; 
-        width: 450px; 
-        margin: 10px 0; 
-        font-size:30px;
-        border-radius:15px;
-      }
-  
-    .login_button {
-        height: 80px; 
-        width: 100px; 
-        font-size: 30px; 
-      }
-    img{
-        height:200px;
-        width:200px;
-        padding-top: 10px;
-      }
-      .forget_p{
-        font-size:25px;
-        color:lavender;
-      }
-      }
+.menu_class a,.menu_link {
+  text-decoration: none;
+  font-size: 18px;
+  color: grey;
+  display: block;
+  transition: 0.3s;
+}
+
+.menu_class a:hover{
+  color: black;
+}
+
+.menu-toggle {
+  position: absolute;
+  left: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  color: grey;
+}
+
+.title {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+  margin-top: auto;
+}
+
     

@@ -6,7 +6,7 @@ const Login = () => {
 const navigate=useNavigate();
 const handle_login=(e)=>{
     e.preventDefault();
-    navigate("/table")
+    navigate("/students")
 }
   return (
     <div className='main'>
